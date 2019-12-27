@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.img{
+			position: absolute;
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			filter: grayscale(10);
+			z-index: -1;
+		}
+		.overlay{
+			position: absolute;
+			z-index: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(45deg, #ff6a6a, transparent);
+			mix-blend-mode: color-burn;
+		}
+		.year svg{
+			fill: transparent;
+			animation: colora 0.5s linear forwards 7.8s;
+		}
+		.welcome svg{
+			fill: transparent;
+			animation: colora 0.5s linear forwards 5s;
+			transform: scale(1.4);
+		}
+		.year
+		{
+			margin-top: 60px;
+		}
+		.welcome svg path{
+			stroke-dasharray: 470px;
+			stroke-dashoffset: 470px;
+			animation: animate 0.7s linear forwards;
+		}
+		.year svg path{
+			stroke-dasharray: 470px;
+			stroke-dashoffset: 470px;
+			animation: animate 0.7s linear forwards;
+		}
+		@keyframes animate{
+			to{
+				stroke-dashoffset: 0px;
+			}
+		}
+		@keyframes colora{
+		to{
+				fill: #fff;
+			}
+		}
+
+
+
+
+		.welcome svg path:nth-child(1){
+			animation-delay: 1s;
+		}
+		.welcome svg path:nth-child(2){
+			animation-delay: 1.6s;
+		}
+		.welcome svg path:nth-child(3){
+			animation-delay: 2.2s;
+		}
+		.welcome svg path:nth-child(4){
+			animation-delay: 2.8s;
+		}
+		.welcome svg path:nth-child(5){
+			animation-delay: 3.4s;
+		}
+		.welcome svg path:nth-child(6){
+			animation-delay: 4.0s;
+		}
+		.welcome svg path:nth-child(7){
+			animation-delay: 4.6s;
+		}
+
+
+		.year svg path:nth-child(1){
+			animation-delay: 6s;
+		}
+		.year svg path:nth-child(2){
+			animation-delay: 6.6s;
+		}
+		.year svg path:nth-child(3){
+			animation-delay: 7.2s;
+		}
+		.year svg path:nth-child(4){
+			animation-delay: 7.8s;
+		}
+	</style>
+</head>
+<body>
+	<section class="fireworks" id="sec1" style="opacity: 0.6"></section>
+	<div class="img">
+		<img src="img1.jpg">
+		<div class="overlay"></div>
+		<div class="welcome">
+			<svg width="461" height="65" viewBox="0 0 461 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M53.0705 1.00001L63.8705 41.5L73.3205 1.00001H90.8705L73.7705 64H56.6705L45.8705 24.85L35.0705 64H17.9705L0.870514 1.00001H18.4205L27.8705 41.5L38.6705 1.00001H53.0705Z" stroke="white" stroke-width="3"/>
+				<path d="M145.363 64H95.4127V1.00001H145.363V13.6H111.613V25.75H138.163V38.35H111.613V51.4H145.363V64Z" stroke="white" stroke-width="3"/>
+				<path d="M168.742 51.4H201.592V64H152.542V1.00001H168.742V51.4Z" stroke="white" stroke-width="3"/>
+				<path d="M256.513 63.1C243.133 64.3 232.033 64.9 223.213 64.9C217.333 64.9 213.013 63.52 210.253 60.76C207.493 58 206.113 53.68 206.113 47.8V19C206.113 12.7 207.523 8.14001 210.343 5.32001C213.223 2.44001 217.813 1.00001 224.113 1.00001H256.513V13.6H227.713C224.113 13.6 222.313 15.4 222.313 19V47.8C222.313 49.18 222.703 50.29 223.483 51.13C224.323 51.91 225.373 52.3 226.633 52.3C227.893 52.3 229.273 52.3 230.773 52.3C232.273 52.24 233.833 52.18 235.453 52.12C237.073 52.06 238.693 52 240.313 51.94C241.993 51.88 244.123 51.76 246.703 51.58C249.343 51.4 252.613 51.19 256.513 50.95V63.1Z" stroke="white" stroke-width="3"/>
+				<path d="M304.223 18.1C304.223 14.5 302.423 12.7 298.823 12.7H283.523C279.923 12.7 278.123 14.5 278.123 18.1V46.9C278.123 50.5 279.923 52.3 283.523 52.3H298.823C302.423 52.3 304.223 50.5 304.223 46.9V18.1ZM320.423 46.9C320.423 53.2 318.983 57.79 316.103 60.67C313.283 63.49 308.723 64.9 302.423 64.9H279.923C273.623 64.9 269.033 63.49 266.153 60.67C263.333 57.79 261.923 53.2 261.923 46.9V18.1C261.923 11.8 263.333 7.24001 266.153 4.42C269.033 1.54001 273.623 0.100006 279.923 0.100006H302.423C308.723 0.100006 313.283 1.54001 316.103 4.42C318.983 7.24001 320.423 11.8 320.423 18.1V46.9Z" stroke="white" stroke-width="3"/>
+				<path d="M383.465 28.9L370.865 51.4H358.265L345.665 28.9V64H329.465V1.00001H346.565L364.565 34.3L382.565 1.00001H399.665V64H383.465V28.9Z" stroke="white" stroke-width="3"/>
+				<path d="M460.451 64H410.501V1.00001H460.451V13.6H426.701V25.75H453.251V38.35H426.701V51.4H460.451V64Z" stroke="white" stroke-width="3"/>
+			</svg>
+
+
+		</div>
+		<div class="year">
+			<svg width="404" height="88" viewBox="0 0 404 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M65.0633 28.4C65.0633 35.2 62.1833 41.08 56.4233 46.04C54.6633 47.56 52.7433 49.08 50.6633 50.6L24.8633 69.2H65.0633V86H0.263275V63.2L43.4633 32V26C43.4633 21.2 41.0633 18.8 36.2633 18.8H2.66328V1.99999H41.0633C49.4633 1.99999 55.5433 3.91999 59.3033 7.75999C63.1433 11.52 65.0633 17.6 65.0633 26V28.4Z" stroke="white" stroke-width="3"/>
+				<path d="M158.621 24.8C158.621 20 156.221 17.6 151.421 17.6H138.221C133.421 17.6 131.021 20 131.021 24.8V63.2C131.021 68 133.421 70.4 138.221 70.4H151.421C156.221 70.4 158.621 68 158.621 63.2V24.8ZM180.221 63.2C180.221 71.6 178.301 77.72 174.461 81.56C170.701 85.32 164.621 87.2 156.221 87.2H133.421C125.021 87.2 118.901 85.32 115.061 81.56C111.301 77.72 109.421 71.6 109.421 63.2V24.8C109.421 16.4 111.301 10.32 115.061 6.55999C118.901 2.71999 125.021 0.799988 133.421 0.799988H156.221C164.621 0.799988 170.701 2.71999 174.461 6.55999C178.301 10.32 180.221 16.4 180.221 24.8V63.2Z" stroke="white" stroke-width="3"/>
+				<path d="M288.188 28.4C288.188 35.2 285.308 41.08 279.548 46.04C277.788 47.56 275.868 49.08 273.788 50.6L247.988 69.2H288.188V86H223.388V63.2L266.588 32V26C266.588 21.2 264.188 18.8 259.388 18.8H225.788V1.99999H264.188C272.588 1.99999 278.668 3.91999 282.428 7.75999C286.268 11.52 288.188 17.6 288.188 26V28.4Z" stroke="white" stroke-width="3"/>
+				<path d="M381.746 24.8C381.746 20 379.346 17.6 374.546 17.6H361.346C356.546 17.6 354.146 20 354.146 24.8V63.2C354.146 68 356.546 70.4 361.346 70.4H374.546C379.346 70.4 381.746 68 381.746 63.2V24.8ZM403.346 63.2C403.346 71.6 401.426 77.72 397.586 81.56C393.826 85.32 387.746 87.2 379.346 87.2H356.546C348.146 87.2 342.026 85.32 338.186 81.56C334.426 77.72 332.546 71.6 332.546 63.2V24.8C332.546 16.4 334.426 10.32 338.186 6.55999C342.026 2.71999 348.146 0.799988 356.546 0.799988H379.346C387.746 0.799988 393.826 2.71999 397.586 6.55999C401.426 10.32 403.346 16.4 403.346 24.8V63.2Z" stroke="white" stroke-width="3"/>
+			</svg>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.fireworks.js"></script>
+	<script type="text/javascript">
+		$('.fireworks').fireworks({ 
+		  sound: true, // sound effect
+		  opacity: 1, 
+		  width: '100%', 
+		  height: '100%' 
+		});
+	</script>
+
+</body>
+</html>
